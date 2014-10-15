@@ -1,43 +1,30 @@
 // Responsive nav menu. Everything related to the navigation in TABLET/MOBILE mode should go here
 
-@media all and (max-width: 1040px) {
-	.telefoonnummer {
-		display: none;
-	}
+@media all and (min-width: 1040px) {
+
 } 
 
 .Navigation-menuToggle {
-  display: block;
+  display: none;
 }
 .Navigation-menuToggle {
 //background-color: white;
   width: 36px;
   height: 36px;
   border-radius: 7px;
-  margin-top: 60px;
-  z-index: 999999;
+  margin: 7px 0;	
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px solid $base-borderColor1;
   cursor: pointer;
-  z-index: 4;
-  position: relative;
-  top:-103px;
   float: right;    
 	&:hover {
 		//	background-color: #fafafa;
-	}
-
-	svg {
-		fill:white;
-		width: 100%;
-		height: 30px;
 	}
 }
 
 .Nav-toggle {
   .Icon.Icon--inline {
-    fill: white;
-    display: block;
+    display: block; 
     margin: auto;
     margin-top: 4px;
     height: 25px;
@@ -69,17 +56,16 @@
 	 }
 	 #js-navCollapseTarget {
 		display: none;
-        position: absolute;
-        top: 65px;
+        position: static;
+        top: 0px;
         left: 0;
         margin: 0;
-        width: 100% !important;
-        z-index: 9999;
+        width: 100%;
+        z-index: 999999;
 	 }
 
 	 .Bot-Nav {
 		height: auto;
-		min-height: 58px;
 	 }
 	 #js-navCollapse {
 		display: block;
@@ -101,18 +87,30 @@
 
 	.Navigation-list {
 		position: static;
-
+        border: 0px solid;
 	}
-
+	
+	ul.Navigation-list--dropdown{
+		position:static;
+		margin-top: 0;
+		li.Navigation-listItem {
+			a{
+				margin-left: 0;	
+			}
+		}
+	}
 
 	.Navigation-listItem {
 		display: block;
 		float: none;
 		line-height: 30px;
 		border-left: 0 solid;
+		width: 100%;
+		z-index: 999999;
+		text-align: center;
 
 		&:last-of-type {
-			margin-right: 25px;
+			margin-bottom: 15px;
 		}
 
 		&:hover {
@@ -133,7 +131,7 @@
         }
 
         &:last-of-type a {              
-
+          border-bottom: 0px solid;
         }
 
 	}
@@ -147,71 +145,24 @@
 		margin: 0;
 		font-weight: 400;
 		letter-spacing: 1.7px;
-	    &:hover {
-            background-color: #1e719a;
-            color: white;
-        }
+	 
 
 
 	}
-
-	.Navigation-listItem--hasDropdown {
-  position: relative;
-  text-decoration: none;
-}
-
-ul.Navigation-list--dropdown {
-  display: block;
-  height: auto;
-  position: relative;
-  width: 100%; 
-  line-height: 40px;
-  z-index: 110;
-  margin-top: 17px;
-  margin-left: 1px;
-  background: #B92935;
-  color: white;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  ul.Navigation-list--dropdown {
-    top: 43px;
-  }
-}
-ul.Navigation-list--dropdown li.Navigation-listItem {
-  display: block;
-  padding: 0 2px;
-  font-size: 18px;
-  margin: 0 auto;
-  border: 0;
-  font-weight: bold;
-  font-weight: bold;
-  color: white;
-}
-ul.Navigation-list--dropdown li.Navigation-listItem a {
-  background-color: transparent;
-  border: 0px solid;
-  font-size: 13px;
-}
 	//	This is for those 3 contact icons on the left of the navbar
 	.Mob-contact-ico {
 		display: block;
 		z-index: 5000;
-		float: right;
-
 
 		a { 
 			border: 2px solid white;
+			position: absolute;
 			display: block;
 			width: 35px;
 			height: 35px;
 			border-radius: 7px;
-
 			top: 8px;
 			background-color: transparent;
-			&:hover {
-				background-color: rgba(255,255,255,0.2);
-			}
-
 			.Icon--inline {
 				fill: white;
 				width: 2em;
@@ -221,25 +172,15 @@ ul.Navigation-list--dropdown li.Navigation-listItem a {
 		}
 
 		.telsvg {
-			position: relative;
-			top: -43px;	
-			left: -13px;	
-			border: 3px solid white;	
-			width: 36px;
-			height: 36px;	
+			left: 10px;				
 			.Icon--inline {
-
-			}
-
-			svg {
-				height: 30px;
-				width: 100%;
-				position: relative;
-				top: -3px;
+				margin: -4px;
+				margin-top: 5px;
 			}
 		}
 
-		.tel2svg {		
+		.tel2svg {
+			left: 55px;				
 			.Icon--inline {
 				margin: -5px;
 				margin-top: 5px;
@@ -247,18 +188,10 @@ ul.Navigation-list--dropdown li.Navigation-listItem a {
 		}
 
 		.mailsvg {
-			position: relative;
-			top: -79px;	
-			left: -53px;	
-			border: 3px solid white;	
-			width: 36px;
-			height: 36px;				
-
-			svg {
-				height: 30px;
-				width: 100%;
-				position: relative;
-				top: -3px;
+			left: 100px;				
+			.Icon--inline {
+				margin: -4px;
+				margin-top: 5px;
 			}
 		}
 	}

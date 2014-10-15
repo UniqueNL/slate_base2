@@ -1,95 +1,55 @@
-// *************************************
-//
-// Header
-// -> Main site header
-//
-// *************************************
+/*                                                      */
+/*                ---  HEADER START ---                 */
+/*                                                      */
 
-.Header {
-  background-image: url("../img/img-header-bg.png");
-  background-size: cover;
+.header-boven{
+
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
-
-// -variable
-
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// .Module--modifierName
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Contact bar ----- //
-
-.Header-contact {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.5);
-}
-
-// ----- Contact bar ----- //
-
-
-// ----- Nav bar ----- //
-
-.Header-nav {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: $c-blue;
-}
-
-// ----- Carousel ----- //
-
-.Header-carousel {
-  @extend .u-gridRow;
-  padding-bottom : ($l-whiteSpace * 4);
-  padding-top    : ($l-whiteSpace * 4);
-}
-
-header {
-  height: 300px;
-}
-
-.header-bg {
-  background: url('../img/headerbg.png');
-  height: 292px;
-  width: 100%;
-  background-size: cover;
-}
-
-.Header-logo {
-  width: 160px;
-  height: 160px;
-  background: white;
+.header-boven-contact{
+  padding: 0;
   position: relative;
-  top: 182px;
-  z-index: 3;
-  border-radius: 4px 4px 0px 0px;
 }
 
-.telefoonnummer {
-  a {
-    color: white;
-  }
+.header-boven-contact-wrapper1{
+
+}
+
+.header-boven-contact-logo{
+
+}
+
+.header-nummer {
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+
+  font-size: 20px;
+  font-weight: bold;
+} 
+
+.header-boven-contact-wrapper2{
+  padding:7% 0 0 0;
+  position: relative;
+}
+
+.nummer-icon{
+  width: 5%;
+  position: absolute;
+  left:0%;
+  top:93%;
+}
+
+.email-icon{
+
+  width:5%;
+  position: absolute;
+  left:40%;
+  top:93%;
+
+}
+
+.header-onderkant{
+
 }

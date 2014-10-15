@@ -9,12 +9,10 @@ ul.Navigation-list--dropdown {
     display: block;
     height: auto;
     position: absolute;
-    width: 200px;
+    width: 100%;
     line-height: 40px;
     z-index: 9999;
-    margin-top: 16px;
-    margin-left: -10px;
-    padding: 10px;
+    margin-top: 27px;
 }
 
 ul.Navigation-list--dropdown li.Navigation-listItem {

@@ -10,7 +10,7 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   map = new google.maps.Map(mapCanvas, mapOptions);
-  codeAddress('Stoofdijk 84 4671RB Dinteloord');
+  codeAddress('Binckhorstlaan 36 1111AA Den Haag');
 }
 
 function codeAddress(address) {

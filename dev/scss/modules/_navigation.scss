@@ -5,106 +5,78 @@
 //
 // *************************************
 
-.Navigation {
-  @include clearfix;
-  text-align: center;
-  padding: 13px;
-  padding-left: 180px;
+//midden header
+//------------------------------------------------------------------------------------------------------------- -->
 
+//nav------------------------------------------------------------------------------------------------->
+.header-midden{}
+.header-midden-nav{
+	padding: 0;
+}
+.Navigation-list{
+  margin:0;
 }
 
-.navigation-bar {
-  position: relative;
-  top: 132px;
+.Navigation-list--dropdown{
+	background:$base-navBg;
 }
 
-nav {
-  width: 100%;
-  background: $c-red;
-  height: 50px;
-  
-}
-
-.relative {
-  position: relative;
-  bottom: 0;
-}
-
-.Navigation-list {
-	display: block;
-	margin: 0px;
-  background: #a51723;
-  
-  a {
-    color: white;
-  }
-}
-
-.Navigation-list--dropdown {
-  font-size: 12px;
-  width: 100%;
-
-}
-
-.telefoonnummer {
-  float: right;
-  position: relative;
-  top: -42px;
-  color: white;
-  font-weight: bold;
-}
-
-.tel-img {
-  width: 21px;
-  height: 21px;
-  position: relative;
-  top: 5px;
-  margin-right: 5px;
-}
-
-.Navigation svg {
-  width: 35px;
-  height: 35px;
-  fill: white;
-}
-
-li .Navigation-list {
-  margin: 3px 0;
-  font-family: 'Open Sans';
-  font-weight: 200;
-
-  a {
-    margin-right: 10px;
-  }
-}
-
-.Navigation-link.is-active {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-// ----- List item ----- //
-
-.Navigation-listItem {
-  display: block;
-  margin: 0 25px;
-
+.Navigation-listItem{
   float: left;
-  &:first-of-type {
+  padding: 3%;
+  margin:0;
 
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
+  	&:first-of-type {
+  		padding-left: 0;
+  	}
+
+  	a{
+  		color: $a-normal;
+  		font-weight: bold;
+  		text-transform: uppercase;
+  	}
 }
 
-// ----- Navigation link ----- //
-
-.Navigation-link {
-  text-transform: uppercase;
+.Navigation-listItem.is-active{
+	background:$a-style;
+	a{
+	color:$base-navBg;
+	}
 }
 
-.Navigation-link--invertedBold {
-  color: $c-white; 
-  font-weight: bold;
+.Navigation-link{
+  margin:0 auto;
+}
+
+.Bot-Nav {
+	background: $base-navBg;
+}
+
+.Navigation-listItem:hover{
+	opacity: 0.5;
+}
+.Navigation-listItem--hasDropdown:hover{
+	background:lighten($a-style, 10%);
+	ul{
+		a.Navigation-link{
+		color:$a-normal;
+		}
+	}
+	ul:hover{
+		a.Navigation-link{
+			color:$base-navBg;
+		}
+	}
+
+}
+.Navigation-listItem--hasDropdown.is-active:hover{
+	a.Navigation-link{
+			color:$base-navBg;
+	}
+}
+
+.Nav-toggle {
+  .Icon.Icon--inline {
+   	fill:$base-borderColor1;
+  }
 }

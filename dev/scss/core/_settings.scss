@@ -16,14 +16,12 @@
 // Variables
 // -------------------------------------
 
-$max-width: 70rem;
+$max-width: 1040px;
 // ----- Colors ----- //
 
 $c-black : #1B1C17;
 $c-blue  : #0070AF;
-$c-white : #FFFFFF;
-$c-red	 : #c11a28;
-$c-gray  : #eaeaea;
+$c-white : #EFEFEF;
 
 // ----- Layout ----- //
 $l-whiteSpace: 0.5rem;
@@ -36,8 +34,8 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
-$t-fontFamily       : 'Titillium Web', 'sans-serif';
-$t-headerFontFamily : 'Titillium Web', 'sans-serif';
+$t-fontFamily       : 'Open Sans', 'sans-serif';
+$t-headerFontFamily : 'Open Sans', 'sans-serif';
 $t-fontSize         : 14px;
 $t-lineHeight       : 1.5;
 

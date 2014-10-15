@@ -1,12 +1,10 @@
 .Footer {
-	background: $c-red;
-	margin-top: 40px;
 }
 
 // RESPONSIVE FOOTER
 .Footer-inner .widget {
-	@include span-columns(3);
-	@media screen and(max-width: 500px){
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
 		@include span-columns(12);
 	}
 }
@@ -19,35 +17,3 @@
 
 }
 
-.Socket {
-	background: #231f20;
-	color: white;
-	font-family: "Open Sans";
-}
-
-.Footer-logo {
-  width: 160px;
-  height: 160px;
-  background: white;
-  z-index: 3;
-  border-radius: 0px 0px 4px 4px; 
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 40px;
-}
-
-.widgettitle {
-	color: white;
-	margin:0;
-	margin-top: 20px;
-}
-
-.textwidget {
-	color: white;
-	font-size: 15px;
-	margin-top: 10px;
-}
-
-.menu-footermenu-container {
- margin: 0;
-}

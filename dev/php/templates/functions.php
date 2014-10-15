@@ -20,10 +20,10 @@ if(is_admin() && !$initialized){
 	  include_once('includes/initialize_pages.php');
 	
 	  $siteIniter = new SiteInitializer(
-		  "kluskoorts", 
-		  "Stoofdijk 84 4671RB Dinteloord", 
-		  "0639813679", 
-		  "info@kluskoorts.nl");
+		  "base2", 
+		  "Binckhorstlaan 36 1111AA Den Haag", 
+		  "0600000000", 
+		  "sam@Lokaalgevonden.nl");
 	  $siteIniter->initializeAll();
 	  add_option('slate_initialized', true);
 }

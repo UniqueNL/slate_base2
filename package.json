@@ -1,5 +1,5 @@
 {
-	"name": "kluskoorts",
+	"name": "base2",
 	"version": "0.3.1",
 	"author": {
 		"name": "Sam",
@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/SamTaal/slate_kluskoorts.git"
+		"url": "https://github.com/SamTaal/slate_base2.git"
 	},
 	"devDependencies": {
 		"grunt": "^0.4.5",
