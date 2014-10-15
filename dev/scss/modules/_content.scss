@@ -1,3 +1,154 @@
-.Content {
+.home-content p {
+	font-size: 15px;
+	font-family: "Open Sans" !important;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+}
 
+.home-content h4 {
+	margin-bottom: 5px;
+}
+
+.home-content h5 {
+	margin-bottom: 5px;
+}
+
+.app {
+	margin-top: 30px;
+}
+
+p img {	
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.home-contact {
+	padding: 20px;
+	background: $c-gray;
+	margin-top: 60px;
+	font-family: "Open Sans" !important;
+}
+
+@media all and (max-width: 1040px) {
+	h2 {
+		font-size: 24px;
+	}
+} 
+
+.home-contact a {
+	width: 100%;
+	background: $c-red;
+	color: white;
+	font-family: "Titillium Web";
+	border-radius: 3px;
+	padding: 20px;
+	display:block;
+	text-align: center;
+	margin-top: 20px;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.28);
+-moz-box-shadow:    0px 3px 0px 0px rgba(0, 0, 0, 0.28);
+box-shadow:         0px 3px 0px 0px rgba(0, 0, 0, 0.28);
+font-weight: bold;
+}
+
+.home-contact a:hover {
+	background: #c64752
+}
+
+.home-contact a:active {
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.0);
+    -moz-box-shadow:    0px 3px 0px 0px rgba(0, 0, 0, 0.0);
+    box-shadow:         0px 3px 0px 0px rgba(0, 0, 0, 0.0);
+	position: relative;
+	top: 3px;
+}
+
+.Content--home h2 {
+	  margin-top: 40px;
+}
+
+.home-left-col {
+	margin-top: 40px;
+}
+
+.grid-header {
+	padding: 20px;
+	color: white;
+	font: 20px;
+	font-weight: 200;
+	background: $c-red;
+	margin: 20px 0;
+	font-family: "Open Sans";
+	border-radius: 4px;
+}
+
+.grid-title {
+	padding: 20px;
+	padding-top: 190px;
+	font-size: 21px;
+	color: white;
+	font-weight: 200;
+	text-shadow: 0px -2px 0px rgba(0, 0, 0, 0.64);
+}
+
+.thumbnail-row .u-gridCol4 {
+	max-width: 345px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.thumbnail-row .u-gridCol4:hover {
+	opacity: 0.7;
+}
+
+@media all and (max-width: 1040px) {
+	.bg-kunstgras, .bg-schilder, .bg-indusreiniging, .bg-autopoetsen, .bg-kleineschadeauto, .bg-terrasreiniging, .bg-kleineklus, .bg-grondwerken, .bg-sierbestrating {
+		
+	}
+} 
+
+.bg-kunstgras {
+	background: url(../img/grid/kunstgras.png) center no-repeat;
+	height: 238px;
+}
+
+.bg-schilder {
+	background: url(../img/grid/schilderwerk2.png) center no-repeat;
+	height: 238px;
+}
+
+.bg-indusreiniging {
+	background: url(../img/grid/indusreiniging.png) center no-repeat;
+	height: 238px;
+}
+
+.bg-autopoetsen {
+	background: url(../img/grid/autopoetsen.png) center no-repeat;
+	height: 238px;
+}
+.bg-kleineschadeauto {
+	background: url(../img/grid/kleineschadeauto.png) center no-repeat;
+	height: 238px;
+}
+.bg-terrasreiniging {
+	background: url(../img/grid/terrasreiniging.png) center no-repeat;
+	height: 238px;
+}
+
+.bg-kleineklus {
+	background: url(../img/grid/kleineklus.png) center no-repeat;
+	height: 238px;
+}
+.bg-grondwerken {
+	background: url(../img/grid/grondwerken.png) center no-repeat;
+	height: 238px;
+}
+.bg-sierbestrating {
+	background: url(../img/grid/sierbestrating.png) center no-repeat;
+	height: 238px;
 }

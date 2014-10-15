@@ -21,7 +21,9 @@ $max-width: 70rem;
 
 $c-black : #1B1C17;
 $c-blue  : #0070AF;
-$c-white : #EFEFEF;
+$c-white : #FFFFFF;
+$c-red	 : #c11a28;
+$c-gray  : #eaeaea;
 
 // ----- Layout ----- //
 $l-whiteSpace: 0.5rem;
@@ -34,8 +36,8 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
-$t-fontFamily       : 'Open Sans', 'sans-serif';
-$t-headerFontFamily : 'Open Sans', 'sans-serif';
+$t-fontFamily       : 'Titillium Web', 'sans-serif';
+$t-headerFontFamily : 'Titillium Web', 'sans-serif';
 $t-fontSize         : 14px;
 $t-lineHeight       : 1.5;
 

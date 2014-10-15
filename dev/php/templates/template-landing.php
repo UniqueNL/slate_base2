@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Landingpage
 */
 ?>
 
@@ -11,7 +11,7 @@ Template Name: Homepage
 			<div class="u-gridCol8 home-left-col">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="Content Content--home" id="post-<?php the_ID(); ?>">
-					<h2><?php the_title(); ?></h2>
+
 					<div class="home-content">
 						<?php the_content(); ?>
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>

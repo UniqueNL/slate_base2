@@ -8,49 +8,90 @@
 .Navigation {
   @include clearfix;
   text-align: center;
+  padding: 13px;
+  padding-left: 180px;
+
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
+.navigation-bar {
+  position: relative;
+  top: 132px;
+}
 
-// Module-variableName
+nav {
+  width: 100%;
+  background: $c-red;
+  height: 50px;
+  
+}
 
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// -------------------------------------
-// States
-// -------------------------------------
+.relative {
+  position: relative;
+  bottom: 0;
+}
 
 .Navigation-list {
 	display: block;
 	margin: 0px;
+  background: #a51723;
+  
+  a {
+    color: white;
+  }
+}
+
+.Navigation-list--dropdown {
+  font-size: 12px;
+  width: 100%;
+
+}
+
+.telefoonnummer {
+  float: right;
+  position: relative;
+  top: -42px;
+  color: white;
+  font-weight: bold;
+}
+
+.tel-img {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+.Navigation svg {
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+
+li .Navigation-list {
+  margin: 3px 0;
+  font-family: 'Open Sans';
+  font-weight: 200;
+
+  a {
+    margin-right: 10px;
+  }
 }
 
 .Navigation-link.is-active {
   text-decoration: underline;
+  font-weight: bold;
 }
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
 
 // ----- List item ----- //
 
 .Navigation-listItem {
   display: block;
-  margin: 0 rem(15px);
+  margin: 0 25px;
+
   float: left;
   &:first-of-type {
-    margin-left: 0;
+
   }
   &:last-of-type {
     margin-right: 0;

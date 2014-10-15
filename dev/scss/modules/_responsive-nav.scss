@@ -1,24 +1,36 @@
 // Responsive nav menu. Everything related to the navigation in TABLET/MOBILE mode should go here
 
-@media all and (min-width: 1040px) {
-
+@media all and (max-width: 1040px) {
+	.telefoonnummer {
+		display: none;
+	}
 } 
 
 .Navigation-menuToggle {
-  display: none;
+  display: block;
 }
 .Navigation-menuToggle {
 //background-color: white;
   width: 36px;
   height: 36px;
   border-radius: 7px;
-  margin-top: 7px;	
+  margin-top: 60px;
+  z-index: 999999;
   background-color: transparent;
   border: 3px solid white;
   cursor: pointer;
+  z-index: 4;
+  position: relative;
+  top:-103px;
   float: right;    
 	&:hover {
 		//	background-color: #fafafa;
+	}
+
+	svg {
+		fill:white;
+		width: 100%;
+		height: 30px;
 	}
 }
 
@@ -57,12 +69,12 @@
 	 }
 	 #js-navCollapseTarget {
 		display: none;
-        position: relative;
+        position: absolute;
         top: 65px;
         left: 0;
         margin: 0;
-        width: 100%;
-        box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.3) inset;
+        width: 100% !important;
+        z-index: 9999;
 	 }
 
 	 .Bot-Nav {
@@ -89,10 +101,6 @@
 
 	.Navigation-list {
 		position: static;
-        background-color: rgba(0, 78, 117, 1);
-        border: 0px solid;
-        box-shadow: 0 0 0 #fff;
-
 
 	}
 
@@ -102,10 +110,9 @@
 		float: none;
 		line-height: 30px;
 		border-left: 0 solid;
-		width: 100%;
 
 		&:last-of-type {
-			margin-bottom: 15px;
+			margin-right: 25px;
 		}
 
 		&:hover {
@@ -122,13 +129,11 @@
 		}
 
         &:first-of-type a {       
-          box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.1) inset;
           padding-top: 10px;  
         }
 
         &:last-of-type a {              
-          box-shadow: 0px 15px 20px -18px rgba(0, 0, 0, 0.6);
-          border-bottom: 0px solid;
+
         }
 
 	}
@@ -149,18 +154,58 @@
 
 
 	}
+
+	.Navigation-listItem--hasDropdown {
+  position: relative;
+  text-decoration: none;
+}
+
+ul.Navigation-list--dropdown {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%; 
+  line-height: 40px;
+  z-index: 110;
+  margin-top: 17px;
+  margin-left: 1px;
+  background: #B92935;
+  color: white;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ul.Navigation-list--dropdown {
+    top: 43px;
+  }
+}
+ul.Navigation-list--dropdown li.Navigation-listItem {
+  display: block;
+  padding: 0 2px;
+  font-size: 18px;
+  margin: 0 auto;
+  border: 0;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+}
+ul.Navigation-list--dropdown li.Navigation-listItem a {
+  background-color: transparent;
+  border: 0px solid;
+  font-size: 13px;
+}
 	//	This is for those 3 contact icons on the left of the navbar
 	.Mob-contact-ico {
 		display: block;
 		z-index: 5000;
+		float: right;
+
 
 		a { 
 			border: 2px solid white;
-			position: absolute;
 			display: block;
 			width: 35px;
 			height: 35px;
 			border-radius: 7px;
+
 			top: 8px;
 			background-color: transparent;
 			&:hover {
@@ -176,15 +221,25 @@
 		}
 
 		.telsvg {
-			left: 10px;				
+			position: relative;
+			top: -43px;	
+			left: -13px;	
+			border: 3px solid white;	
+			width: 36px;
+			height: 36px;	
 			.Icon--inline {
-				margin: -4px;
-				margin-top: 5px;
+
+			}
+
+			svg {
+				height: 30px;
+				width: 100%;
+				position: relative;
+				top: -3px;
 			}
 		}
 
-		.tel2svg {
-			left: 55px;				
+		.tel2svg {		
 			.Icon--inline {
 				margin: -5px;
 				margin-top: 5px;
@@ -192,10 +247,18 @@
 		}
 
 		.mailsvg {
-			left: 100px;				
-			.Icon--inline {
-				margin: -4px;
-				margin-top: 5px;
+			position: relative;
+			top: -79px;	
+			left: -53px;	
+			border: 3px solid white;	
+			width: 36px;
+			height: 36px;				
+
+			svg {
+				height: 30px;
+				width: 100%;
+				position: relative;
+				top: -3px;
 			}
 		}
 	}

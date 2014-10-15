@@ -1,5 +1,8 @@
 	<div class="Footer">
 		<div class="u-gridContainer">
+			<div class="Footer-logo">
+				<a href="/index.php"><img src="/files/2014/09/kluskoorts_logo.jpg" /></a>
+			</div>
 			<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="Footer-inner u-gridRow">
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
@@ -31,6 +34,7 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/nav-dropdown.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prepend-svg.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/ga.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.0/html-inspector.js"></script>
   <script>HTMLInspector.inspect();</script>
